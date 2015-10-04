@@ -1,0 +1,19 @@
+Index: myHeader.h
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>windows-1251
+===================================================================
+--- myHeader.h	(revision )
++++ myHeader.h	(revision )
+@@ -207,8 +207,10 @@
+ {
+     if (f == NULL || text == NULL)
+     {
+-        errno = 
++        errno = EEXIST;
++        return -1;
+     }
++
+     if (size < 1)
+     {
+         errno = EIO;

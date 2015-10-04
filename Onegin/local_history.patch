@@ -1,0 +1,16 @@
+Index: main.cpp
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>windows-1251
+===================================================================
+--- main.cpp	(revision )
++++ main.cpp	(revision )
+@@ -73,7 +73,7 @@
+     size_t len1 = 0, len2 = 0;
+     len1 = strlen(string1);
+     len2 = strlen(string2);
+-    
++
+ 
+     if (len1 <= len2)
+     {
